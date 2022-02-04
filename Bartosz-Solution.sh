@@ -110,19 +110,19 @@ cat $FILE #vim $FILE
 # 52: output the full path you are on
 pwd 
 # 53: if there are any directories in the folder then move inside any one of them
-
+cd $DIRECTORY 
 # 54: output the full path you are on
-# 
+pwd 
 # 55: create a file called relative.txt and immediately delete it
-# 
+touch relative.txt && rm relative.txt
 # 56: output who the active user is
-# 
+echo $USER
 # 57: create a file called sister.txt. Put the text 'nerve rider panel stock abortion' in it and copy it so there is also a interference.txt with same content
-# 
+echo 'nerve ride panel stock abortion' >> sister.txt >> interference.txt
 # 58: create a file called identity.txt and immediately delete it
-# 
+touch indentity.txt && rm indentity.txt
 # 59: write something in a file called recommend.txt
-# 
+echo 'something' >> recommend.txt
 # 60: move two folders up
 # 
 # 61: create a file called discover.txt and immediately delete it
