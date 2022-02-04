@@ -76,7 +76,7 @@ echo $USER
 rm -rf ./*(om[1])
 ls
 # 37: open a file in the terminal and see the content
- 
+cat $FILE #vim $FILE ;) 
 # 38: create a file called pray.txt and rename it so that it's called degree.txt instead. Hint: This should be done in 2 commands
 # 
 # 39: create two directories rider and relative and move into relative
