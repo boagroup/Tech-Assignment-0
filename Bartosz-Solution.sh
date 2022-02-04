@@ -14,7 +14,7 @@ echo 'cater support shot panel excuse' >> recession.txt && cp recession.txt shal
 # 6: create a file called excuse.txt
 touch excuse.txt 
 # 7: create a directory nerve and move into the directory
-mkdir nerve && mv nerve $DIRECTORY
+mkdir nerve && cd nerve
 # 8: output the sizes of the files in the directory
 l
 # 9: output what's in the directory
@@ -30,7 +30,7 @@ echo $HOSTNAME
 # 14: output the content of any file in the directory
 cat $FILE
 # 15: create two directories banish and pioneer and move into pioneer
-mkdir banish pioneer && mv banish pioneer/ 
+mkdir banish pioneer && cd pioneer 
 # 16: delete the last folder you created
 rm -rf ./*(om[1])
 ls 
@@ -39,7 +39,7 @@ la
 # 18: create a file called pray.txt and rename it so that it's called hill.txt instead. Hint: This should be done in 2 commands
 touch pray.txt && mv pray.txt hill.txt 
 # 19: create two directories discover and abortion and move into abortion
-mkdir discover abortion && mv discover abortion 
+mkdir discover abortion && cd abortion 
 # 20: output the sizes of the files in the directory
 l 
 # 21: move two folders up
@@ -65,11 +65,11 @@ la
 # 31: move two folders up
 cd ../.. 
 # 32: create a directory beat and move into the directory
-mkdir beat && mv beat $DIRECTORY 
+mkdir beat && cd beat 
 # 33: create a directory cousin and move into the directory
-mkdir cousin && mv cousin $DIRECTORY 
+mkdir cousin && cd cousin 
 # 34: create two directories advice and appreciate and move into appreciate
-mkdir advice appreciate && mv advice appreciate/
+mkdir advice appreciate && cd appreciate
 # 35: output who the active user is
 echo $USER 
 # 36: delete the last file you created
@@ -78,31 +78,33 @@ ls
 # 37: open a file in the terminal and see the content
 cat $FILE #vim $FILE ;) 
 # 38: create a file called pray.txt and rename it so that it's called degree.txt instead. Hint: This should be done in 2 commands
-# 
+touch pray.txt && mv pray.txt degree.txt 
 # 39: create two directories rider and relative and move into relative
-# 
+mkdir rider relative && cd relative 
 # 40: create two directories relative and hill and move into hill
-# 
+mkdir relative hill && cd hill
 # 41: write something in a file called rider.txt
-# 
+echo "something" >> rider.txt 
 # 42: create a directory degree and move into the directory
-# 
+mkdir degree && cd degree
 # 43: create two directories banish and pen and move into pen
-# 
+mkdir banish pen && cd pen
 # 44: create a file called stock.txt
-# 
+touch stock.txt 
 # 45: create a file called ditch.txt and rename it so that it's called relative.txt instead. Hint: This should be done in 2 commands
-# 
+touch ditch.txt && mv ditch.txt relative.txt  
 # 46: echo 'appreciate stock cousin ethics correspondence' into the file
-# 
+echo 'appreciate stock cousin ethics correspondence' >> $FILE 
 # 47: output hidden files
-# 
+la
 # 48: delete the last folder you created
-# 
+rm -rf ./*(om[1])
+la
 # 49: delete the last folder you created
-# 
+rm -rf ./*(om[1])
+la
 # 50: output the content of any file in the directory
-# 
+ 
 # 51: open a file in the terminal and see the content
 # 
 # 52: output the full path you are on
