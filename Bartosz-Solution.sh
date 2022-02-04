@@ -104,13 +104,13 @@ la
 rm -rf ./*(om[1])
 la
 # 50: output the content of any file in the directory
- 
+cat $FILE 
 # 51: open a file in the terminal and see the content
-# 
+cat $FILE #vim $FILE
 # 52: output the full path you are on
-# 
+pwd 
 # 53: if there are any directories in the folder then move inside any one of them
-# 
+
 # 54: output the full path you are on
 # 
 # 55: create a file called relative.txt and immediately delete it
