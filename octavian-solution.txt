@@ -1,0 +1,757 @@
+1: output what's in the directory
+No directory specified. 
+Outputting all files of personal default directory "C:\Users\octav" with command:
+ls
+
+2: echo 'cousin speculate panel surprise rain' into the file
+No file specified.
+
+3: create a directory difficulty and move into the directory
+Creating directory "difficulty" with command:
+mkdir difficulty
+Moving into directory with command:
+cd .\difficulty\
+
+4: create a file called on.txt
+Creating file "on.txt" with command:
+touch on.txt (UNIX)
+New-Item on.txt (PowerShell)
+
+5: output the sizes of the files in the directory
+Outputting all files sizes with command:
+ls
+(Under "Length")
+
+6: delete the last folder you created
+Exiting the folder "difficulty" with command:
+cd ..
+Deleting the folder "difficulty" recursively in Windows with command:
+rm -r .\difficulty\
+
+7: open a file in the terminal and see the content
+Creating file to open with command:
+New-Item temporary.txt
+Opening the file with command:
+.\temporary.txt
+
+8: open a file in the terminal and see the content
+Opening the file with command:
+.\temporary.txt
+
+9: move two folders up
+Moving two folders up with command:
+cd ../..
+
+10: move two folders up
+Moving two folders up with command:
+cd ../..
+
+11: create two directories degree and cousin and move into cousin
+Creating two directories degree and cousin with commands:
+mkdir degree
+mkdir cousin
+Moving into "cousin" with command:
+cd cousin
+
+12: output the full path you are on
+Outputting current path with command:
+pwd
+
+13: echo 'cater architecture on needle pioneer' into the file
+No file in "cousin" to echo, but command would be:
+echo "cater architecture on needle pioneer" >> filename.txt
+
+14: create a file called surprise.txt and immediately delete it
+PowerShell does not support the && operator. I'd have to do something like:
+(New-Item surprise.txt) -and (rm surprise.txt)
+but UNIX is simply:
+touch surprise.txt && rm surprise.txt
+
+15: output the sizes of the files in the directory
+Outputting all files sizes with command:
+ls
+(Under "Length")
+
+16: create a file called advantage.txt
+Creating file "advantage.txt" with command:
+touch advantage.txt (UNIX)
+New-Item advantage.txt (PowerShell)
+
+17: create a file called interference.txt and rename it so that it's called banish.txt instead. Hint: This should be done in 2 commands
+Creating file "advantage.txt" with command:
+New-Item interference.txt
+Renaming file with command:
+Rename-Item .\interference.txt banish.txt
+
+18: create a file called speculate.txt and rename it so that it's called pray.txt instead. Hint: This should be done in 2 commands
+Creating file "speculate.txt" with command:
+New-Item speculate.txt
+Renaming file with command:
+Rename-Item .\speculate.txt pray.txt
+
+19: create a file called rider.txt and immediately delete it
+Creating and immediately deleting with command:
+touch rider.txt && rm rider.txt
+
+20: create a file called nerve.txt and immediately delete it
+Creating and immediately deleting with command:
+touch nerve.txt && rm nerve.txt
+
+21: create a file called needle.txt and immediately delete it
+Creating and immediately deleting with command:
+touch needle.txt && rm needle.txt
+
+22: output the sizes of the files in the directory
+Outputting all files sizes with command:
+ls
+(Under "Length")
+
+23: create a file called on.txt and rename it so that it's called plane.txt instead. Hint: This should be done in 2 commands
+Creating file "speculate.txt" with command:
+New-Item on.txt
+Renaming file with command:
+Rename-Item .\on.txt plane.txt
+
+24: output the sizes of the files in the directory
+Outputting all files sizes with command:
+ls
+(Under "Length")
+
+25: delete the last file you created
+Deleting last created item "plane.txt":
+rm plane.txt
+
+26: output what's in the directory
+Outputting directory contents with:
+ls
+
+27: delete the last folder you created
+Leaving cousin directory:
+cd ..
+Deleting cousin directory:
+rm -r .\cousin\
+
+28: create a file called medal.txt. Put the text 'evaluate honor bay cater nerve' in it and copy it so there is also a recommend.txt with same content
+New-Item medal.txt
+echo "evaluate honor bay cater nerve" >> medal.txt
+Copy-Item ".\medal.txt" -Destination ".\recommend.txt"
+
+29: create a file called cater.txt
+New-Item cater.txt
+
+30: echo 'recommend terminal discover proportion difficulty' into the file
+echo "recommend terminal discover proportion difficulty" >> cater.txt
+
+31: create a file called bay.txt and immediately delete it
+Creating and immediately deleting with command:
+touch bay.txt && rm bay.txt
+
+32: delete the last folder you created
+Last folder already deleted. Deleting second-to-last folder "degree":
+rm -r .\degree\
+
+33: output the full path you are on
+Outputting current path with command:
+pwd
+
+34: output what's in the directory
+Outputting directory contents with:
+ls
+
+35: output hidden files
+ls already outputs hidden files by default on my machine. If it was not set up like this, I would use:
+ls -Force
+
+36: write something in a file called plane.txt
+New-Item plane.txt
+echo "something" >> plane.txt
+
+37: move one level up
+cd ..
+
+38: output the full path you are on
+Outputting directory contents with:
+ls
+
+39: create a file called advice.txt. Put the text 'ethics surprise hill plane regret' in it and copy it so there is also a speculate.txt with same content
+New-Item advice.txt
+echo "ethics surprise hill plane regret" >> advice.txt
+Copy-Item ".\advice.txt" -Destination ".\speculate.txt"
+40: output hidden files
+
+41: create a file called salvation.txt
+New-Item salvation.txt
+
+42: create two directories panel and needle and move into needle
+Creating two directories panel and needle with commands:
+mkdir panel
+mkdir needle
+Moving into "needle" with command:
+cd needle
+
+43: create a file called architecture.txt
+New-Item architecture.txt
+
+44: output hidden files
+ls -Force or simply ls
+
+45: output who the active user is
+$env:UserName
+
+46: delete the last folder you created
+cd ..
+rm -r .\needle
+
+47: move two folders up
+cd ..\..
+
+48: delete the last folder you created
+Last folder already deleted. Deleting second-to-last:
+cd Users\octav
+rm -r panel
+
+49: output hidden files
+ls -Force or ls
+
+50: output hidden files
+ls -Force or ls
+
+51: create a file called panel.txt and immediately delete it
+touch panel.txt && rm panel.txt
+
+52: output who the active user is
+$env:UserName
+
+53: write something in a file called speculate.txt
+New-Item speculate.txt
+echo "something" >> speculate.txt
+
+54: output what's in the directory
+ls
+
+55: echo 'shot sister ethics advice honor' into the file
+echo "shot sister ethics advice honor" >> speculate.txt
+
+56: create a directory responsibility and move into the directory
+mkdir responsibility
+cd responsibility
+
+57: output hidden files
+ls -Force or ls
+
+58: output the full path you are on
+pwd
+
+59: if there are any directories in the folder then move inside any one of them
+No other directories in "responsibility"
+
+60: open a file in the terminal and see the content
+New-Item temporary.txt
+./temporary.txt
+
+61: create a file called regret.txt
+New-Item regret.txt
+
+62: create a directory nerve and move into the directory
+mkdir nerve
+cd nerve
+
+63: move two folders up
+cd ..\..
+
+64: delete the last file you created
+rm responsibility\nerve\regret.txt
+
+
+65: create a directory depression and move into the directory
+mkdir depression
+cd depression
+
+66: create a directory hill and move into the directory
+mkdir hill
+cd hill
+
+67: open a file in the terminal and see the content
+New-Item temporary.txt
+./temporary.txt
+
+68: move one level up
+cd ..
+
+69: move two folders up
+cd ..\..
+
+70: move one level up
+cd ..
+
+71: open a file in the terminal and see the content
+New-Item temporary.txt
+./temporary.txt
+
+72: delete the last folder you created
+rm Users\octav\depression\hill
+
+73: output the full path you are on
+pwd
+
+74: output the content of any file in the directory
+New-Item temporary.txt
+./temporary.txt
+
+75: output the full path you are on
+pwd
+
+76: delete the last folder you created
+Last folder already deleted. Deleting second-to-last folder:
+rm -r depression
+
+77: output hidden files
+ls -Force or ls
+
+78: output the full path you are on
+pwd
+
+79: move two folders up
+cd ..\..
+
+80: move one level up
+cd ..
+
+81: move two folders up
+cd ..\..
+
+82: output hidden files
+ls -Force or ls
+
+83: open a file in the terminal and see the content
+New-Item temporary.txt
+./temporary.txt
+
+84: create two directories cousin and ethics and move into ethics
+mkdir cousin
+mkdir ethics
+cd ethics
+
+85: output the full path you are on
+pwd
+
+86: move two folders up
+cd ..\..
+
+87: create a file called panel.txt and immediately delete it
+touch panel.txt && rm panel.txt
+
+88: create two directories stock and appreciate and move into appreciate
+mkdir stock
+mkdir apprentice
+cd apprentice
+
+89: if there are any directories in the folder then move inside any one of them
+No directories in apprentice.
+
+90: output hidden files
+ls -Force or ls
+
+91: output the sizes of the files in the directory
+ls (under "length")
+
+92: output hidden files
+ls -Force or ls
+
+93: output the sizes of the files in the directory
+ls (under "length")
+
+94: create a file called speculate.txt. Put the text 'panel abortion banish speculate panel' in it and copy it so there is also a stock.txt with same content
+New-Item speculate.txt
+echo "panel abortion banish speculate panel" >> speculate.txt
+Copy-Item ".\speculate.txt" -Destination ".\stock.txt"
+
+95: delete the last folder you created
+cd ..
+rm -r apprentice
+
+96: create a directory abortion and move into the directory
+mkdir abortion
+cd abortion
+
+97: output the full path you are on
+pwd
+
+98: move two folders up
+cd ..\..
+
+99: create a directory panel and move into the directory
+mkdir panel
+cd panel
+
+100: create a file called hill.txt and immediately delete it
+touch hill.txt && rm hill.txt
+
+101: create a directory regret and move into the directory
+mkdir regret
+cd regret
+
+102: open a file in the terminal and see the content
+New-Item temporary.txt
+./temporary.txt
+
+103: output what's in the directory
+ls
+
+104: output the content of any file in the directory
+./temporary.txt
+
+105: create a file called appreciate.txt and immediately delete it
+touch hill.txt && rm hill.txt
+
+106: create a directory pen and move into the directory
+mkdir pen
+cd pen
+
+107: output what's in the directory
+ls
+
+108: move one level up
+cd ..
+
+109: move one level up
+cd ..
+
+110: if there are any directories in the folder then move inside any one of them
+cd regret
+
+111: create a directory banish and move into the directory 
+mkdir banish
+cd banish
+
+112: output the sizes of the files in the directory
+ls
+
+113: echo 'stock advantage experienced regret correspondence' into the file
+New-Item temp.txt
+echo "stock advantage experienced regret correspondence" >> temp.txt
+
+114: output the full path you are on
+pwd
+
+115: output the content of any file in the directory
+.\temp
+
+116: echo 'architecture speculate beat cousin cater' into the file
+echo "architecture speculate beat cousin cater" >> temp.txt
+
+117: write something in a file called support.txt
+New-Item support.txt
+echo "something" >> support.txt
+
+118: open a file in the terminal and see the content
+.\support.txt
+
+119: output who the active user is
+$env:UserName
+
+120: output who the active user is
+$env:UserName
+
+121: output what's in the directory
+ls
+
+122: move one level up
+cd ..
+
+123: move one level up
+cd ..
+
+124: output the sizes of the files in the directory
+ls
+
+125: output the content of any file in the directory
+No files in "pen"
+
+126: output what's in the directory
+ls
+
+127: output what's in the directory
+ls
+
+128: output what's in the directory
+ls
+
+129: create a file called nerve.txt
+New-Item nerve.txt
+
+130: open a file in the terminal and see the content
+.\nerve.txt
+
+131: write something in a file called advice.txt
+New-Item advice.txt
+echo "something" >> advice.txt
+
+132: move one level up
+cd ..
+
+133: delete the last folder you created
+rm -r :C\Users\Octav\panel\regret
+
+134: output who the active user is
+$env:UserName
+
+135: create a directory advice and move into the directory
+mkdir advice
+cd advice
+
+136: write something in a file called advantage.txt
+New-Item advantage.txt
+echo "something" >> advantage.txt
+
+137: output the sizes of the files in the directory
+ls
+
+138: create a file called cater.txt
+New-Item cater.txt
+
+139: output who the active user is
+$env:UserName
+
+140: write something in a file called rain.txt
+New-Item rain.txt
+echo "something" >> rain.txt
+
+141: if there are any directories in the folder then move inside any one of them
+No directories in "advice".
+
+142: create a file called recession.txt and rename it so that it's called banish.txt instead. Hint: This should be done in 2 commands
+New-Item recession.txt
+Renaming file with command:
+Rename-Item .\recession.txt banish.txt
+
+143: create two directories recession and hill and move into hill
+mkdir recession
+mkdir hill
+cd hill
+
+144: move one level up
+cd ..
+
+145: echo 'shallow shot ethics honor advantage' into the file
+echo "shallow shot ethics honor advantage" >> banish.txt
+
+146: create a directory proportion and move into the directory
+mkdir proportion
+cd proportion
+
+147: output hidden files
+ls -Force
+
+148: delete the last folder you created
+cd ..
+rm proportion
+
+149: output the full path you are on
+pwd
+
+150: write something in a file called hill.txt
+New-Item hill.txt
+echo "something" >> hill.txt
+
+151: write something in a file called honor.txt
+New-Item honor.txt
+echo "something" >> honor.txt
+
+152: create a file called beat.txt and rename it so that it's called correspondence.txt instead. Hint: This should be done in 2 commands
+
+153: echo 'ethics pray appreciate abortion cousin' into the file
+
+154: output the content of any file in the directory
+
+155: create a file called pioneer.txt and rename it so that it's called pen.txt instead. Hint: This should be done in 2 commands
+
+156: output hidden files
+
+157: output what's in the directory
+
+158: if there are any directories in the folder then move inside any one of them
+
+159: output hidden files
+
+160: create a directory terminal and move into the directory
+
+161: delete the last file you created
+
+162: output the content of any file in the directory
+
+163: create a file called ditch.txt. Put the text 'identity terminal cater discover excuse' in it and copy it so there is also a needle.txt with same content
+
+164: open a file in the terminal and see the content
+
+165: if there are any directories in the folder then move inside any one of them
+
+166: delete the last file you created
+
+167: create two directories abortion and terminal and move into terminal
+
+168: create a file called terminal.txt and rename it so that it's called recommend.txt instead. Hint: This should be done in 2 commands
+
+169: create a file called honor.txt and immediately delete it
+
+170: output the content of any file in the directory
+
+171: create a file called degree.txt
+
+172: output what's in the directory
+
+173: move one level up
+
+174: output the content of any file in the directory
+
+175: move two folders up
+
+176: create a directory needle and move into the directory
+
+177: create a file called salvation.txt and immediately delete it
+
+178: create a file called difficulty.txt and rename it so that it's called ditch.txt instead. Hint: This should be done in 2 commands
+
+179: output who the active user is
+
+180: output the full path you are on
+
+181: open a file in the terminal and see the content
+
+182: output what's in the directory
+
+183: open a file in the terminal and see the content
+
+184: move two folders up
+
+185: delete the last file you created
+
+186: open a file in the terminal and see the content
+
+187: output what's in the directory
+
+188: if there are any directories in the folder then move inside any one of them
+
+189: create a file called surprise.txt and rename it so that it's called panel.txt instead. Hint: This should be done in 2 commands
+
+190: echo 'correspondence recession beat advice recommend' into the file
+
+191: move two folders up
+
+192: create a file called cater.txt
+
+193: if there are any directories in the folder then move inside any one of them
+
+194: delete the last folder you created
+
+195: create a file called responsibility.txt
+
+196: move one level up
+
+197: create a file called abortion.txt
+
+198: delete the last file you created
+
+199: delete the last file you created
+
+200: delete the last folder you created
+
+201: output the sizes of the files in the directory
+
+202: output the sizes of the files in the directory
+
+203: output who the active user is
+
+204: output hidden files
+
+205: move two folders up
+
+206: create a file called advice.txt and immediately delete it
+
+207: write something in a file called speculate.txt
+
+208: create a file called regret.txt and rename it so that it's called recession.txt instead. Hint: This should be done in 2 commands
+
+209: create a file called ditch.txt. Put the text 'pen abortion advantage panel correspondence' in it and copy it so there is also a support.txt with same content
+
+210: write something in a file called correspondence.txt
+
+211: delete the last folder you created
+
+212: write something in a file called terminal.txt
+
+213: delete the last file you created
+
+214: output who the active user is
+
+215: move one level up
+
+216: if there are any directories in the folder then move inside any one of them
+
+217: output the sizes of the files in the directory
+
+218: echo 'rain pen responsibility degree needle' into the file
+
+219: create a file called needle.txt and rename it so that it's called recommend.txt instead. Hint: This should be done in 2 commands
+
+220: output the sizes of the files in the directory
+
+221: open a file in the terminal and see the content
+
+222: create a file called beat.txt
+
+223: output what's in the directory
+
+224: output what's in the directory
+
+225: output the full path you are on
+
+226: create a file called plane.txt
+
+227: output who the active user is
+
+228: output the full path you are on
+
+229: output who the active user is
+
+230: create a directory architecture and move into the directory
+
+231: output the full path you are on
+
+232: output who the active user is
+
+233: create a file called ethics.txt
+
+234: write something in a file called shot.txt
+
+235: create a directory ditch and move into the directory
+
+236: move one level up
+
+237: create a file called sister.txt. Put the text 'appreciate cater shallow relative pray' in it and copy it so there is also a experienced.txt with same content
+
+238: move one level up
+
+239: output the sizes of the files in the directory
+
+240: delete the last file you created
+
+241: output hidden files
+
+242: output the full path you are on
+
+243: output the full path you are on
+
+244: echo 'pioneer plane sister difficulty medal' into the file
+
+245: create two directories speculate and surprise and move into surprise
+
+246: move one level up
+
+247: create a file called shot.txt and rename it so that it's called advantage.txt instead. Hint: This should be done in 2 commands
+
+248: output hidden files
+
+249: create a file called stock.txt. Put the text 'speculate salvation shallow depression discover' in it and copy it so there is also a nerve.txt with same content
+
+250: output the full path you are on
